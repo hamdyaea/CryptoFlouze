@@ -12,9 +12,6 @@ The data is downloaded from : https://coinmarketcap.com/api/
 
 You need to subscribe to have a free api key and put it at the line 45. (ttps://coinmarketcap.com/api/)
 
-   
-![Screenshot](screenshot.png)
-
 
 ## What you need to make it work :  
 
