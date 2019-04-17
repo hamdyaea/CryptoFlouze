@@ -12,6 +12,13 @@ The data is downloaded from : https://coinmarketcap.com/api/
 
 You need to subscribe to have a free api key and put it at the line 45. (ttps://coinmarketcap.com/api/)
 
+## Windows .exe version :
+
+Download this zip file, unzip everything in the same directory.
+The data are updated at every run.
+
+[![Download CryptoFlouze](https://img.shields.io/sourceforge/dm/cryptoflouze.svg)](https://sourceforge.net/projects/cryptoflouze/files/latest/download)
+[![Download CryptoFlouze](https://a.fsdn.com/con/app/sf-download-button)](https://sourceforge.net/projects/cryptoflouze/files/latest/download)
 
 ## What you need to make it work :  
 
@@ -35,6 +42,12 @@ At least the version 0.98
 sudo python3 -m pip install --upgrade easygui 
 ```
 
+You need to install requests for Python 3 :
+
+
+```sh
+sudo pip3 install requests 
+```
 
 ## How to launch this software :  
 
