@@ -2,7 +2,7 @@
 
 # CryptoFlouze
 
-![Screenshot](nasa.jpg)
+![Screenshot](screenshot.png)
 
 ## What's this software ?  
 
