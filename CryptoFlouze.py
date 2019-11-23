@@ -6,7 +6,7 @@ https://github.com/hamdyaea
 hamdy.aea@protonmail.com
 """
 
-# You need to have an free  API key from https://coinmarketcap.com/api/ You have to put it on line 45.
+# You need to have an free  API key from https://coinmarketcap.com/api/ You have to put it on line 70.
 
 from requests import Session
 import json
