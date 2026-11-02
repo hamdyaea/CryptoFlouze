@@ -1,72 +1,17 @@
-![Awesome](awesome.svg) ![Python](python.png)  
+# CryptoFlouze — Cryptocurrency Market Snapshot
 
-# CryptoFlouze
+**Developer:** Hamdy Abou El Anein  
+**Contact:** info@daylightlinux.ch  
+**License:** GPL v3 (see LICENSE).
 
-![Screenshot](screenshot.png)
-
-## What's this software ?  
-
-This Python 3 software download and display the last prices of the top 20 cryptocurrencies on the market.
-All the data are updated at every run.
-The data is downloaded from : https://coinmarketcap.com/api/
-
-You need to subscribe to have a free api key and put it at the line 45. (ttps://coinmarketcap.com/api/)
-
-## Windows .exe version :
-
-Download this zip file, unzip everything in the same directory.
-The data are updated at every run.
-
-[![Download CryptoFlouze](https://img.shields.io/sourceforge/dm/cryptoflouze.svg)](https://sourceforge.net/projects/cryptoflouze/files/latest/download)
-[![Download CryptoFlouze](https://a.fsdn.com/con/app/sf-download-button)](https://sourceforge.net/projects/cryptoflouze/files/latest/download)
-
-## What you need to make it work :  
-
-You need to subscribe to have a free api key and put it at the line 45. 
-
-
-https://coinmarketcap.com/api/ #apply-for-an-api-key 
-
-Modify this line with your key :
-
-Put the key between the " " without space on line 45.
-
-
-The last version of Python 3.
-
-you also need to have the easygui library for python 3:
-
-At least the version 0.98
-
-```sh
-sudo python3 -m pip install --upgrade easygui 
-```
-
-You need to install requests for Python 3 :
-
-
-```sh
-sudo pip3 install requests 
-```
-
-## How to launch this software :  
+A Python 3/Tkinter market viewer using the public CoinPaprika API. It replaces EasyGUI, removes the hardcoded CoinMarketCap API key placeholder and uses a background thread to keep the GUI responsive. No API key or third-party Python package is needed.
 
 ```sh
 python3 CryptoFlouze.py
-```  
+python3 CryptoFlouze.py --text --limit 10
+python3 -m unittest discover -s tests -v
+```
 
-## Requirements :
+The app makes HTTPS requests to CoinPaprika. Live price availability, API limits, freshness and completeness depend on the external provider. Prices are informational, not financial advice.
 
-If you miss a module, install it with the command pip install module-name. For example if you miss PIL you can install it with : sudo pip3 install pillow.
-
-Your user must have read and write access on the current running 
-directory.
-
-
-## Developer - Author
-
-Hamdy Abou El Anein
-
-## Homepage
-
-http://www.daylightlinux.ch 
+Original implementation: [old branch](https://github.com/hamdyaea/CryptoFlouze/tree/old).
