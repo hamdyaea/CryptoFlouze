@@ -4,6 +4,7 @@
 # SPDX-License-Identifier: GPL-3.0-only
 """CryptoFlouze: read-only cryptocurrency prices from CoinPaprika."""
 from __future__ import annotations
+from pathlib import Path
 import argparse
 from concurrent.futures import ThreadPoolExecutor
 import json
@@ -66,6 +67,10 @@ def main() -> None:
     frame = ttk.Frame(root, padding=15)
     frame.pack(fill="both", expand=True)
     status = tk.StringVar(value="Ready")
+    artwork = tk.PhotoImage(file=str(Path(__file__).resolve().parent / "Pictures/crypto-ui.png"))
+    illustration = tk.Label(frame, image=artwork)
+    illustration.image = artwork
+    illustration.pack()
     ttk.Label(frame, textvariable=status).pack(anchor="w")
     output = tk.Text(frame, font=("monospace", 11), wrap="none")
     output.pack(fill="both", expand=True, pady=8)
